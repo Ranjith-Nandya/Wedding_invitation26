@@ -859,13 +859,13 @@ import {
 from "https://www.gstatic.com/firebasejs/12.11.0/firebase-firestore.js";  
   
 const firebaseConfig = {
-  apiKey: "AIzaSyCUitNDNI8LXvyM1R7u5E078i620UMdlPk",
-  authDomain: "ranjith-nandya-wedding25.firebaseapp.com",
-  projectId: "ranjith-nandya-wedding25",
-  storageBucket: "ranjith-nandya-wedding25.firebasestorage.app",
-  messagingSenderId: "634946456459",
-  appId: "1:634946456459:web:32b2b02bf40e65a0163d8e"
-}; 
+  apiKey: "AIzaSyDRZz72AgqZosKXKJFtmY2l0CCBWpHeP7w",
+  authDomain: "nandya-ranjith-wedding26.firebaseapp.com",
+  projectId: "nandya-ranjith-wedding26",
+  storageBucket: "nandya-ranjith-wedding26.firebasestorage.app",
+  messagingSenderId: "421138706058",
+  appId: "1:421138706058:web:7b9ae80d4647a0a7cfc773"
+};
   
 const app = initializeApp(firebaseConfig);  
 const db = getFirestore(app);  
@@ -887,7 +887,7 @@ if (localStorage.getItem("wishSent")) {
   }
 
   await addDoc(collection(db, "wishes"), {
-    eventId: "Nandya-Ranjith",
+    eventId: "Bride-Invitation",
     name: name,
     message: message,
     time: Date.now()
@@ -906,11 +906,12 @@ setTimeout(() => {
   alert("Wish sent successfully 🤍");
 }; 
 /* COUPLE ID */  
-const eventId = "Nandya-Ranjith";  
+const eventId = "Bride-Invitation";  
   
 /* SHOW WISHES */  
 const q = query(
   collection(db, "wishes"),
+  where("eventId", "==", eventId),
   orderBy("time", "desc"),
   limit(21)
 ); 
