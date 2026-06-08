@@ -1,0 +1,25 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+
+BEGIN:VEVENT
+SUMMARY:Nandya ❤️ Ranjith Wedding
+DTSTART:20260625T034500Z
+DTEND:20260625T041500Z
+LOCATION:Pushpa Community Hall, KR Nagar Taluk, Mysore District
+DESCRIPTION:Join us to celebrate the wedding of Ranjith and Nandya
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+
+BEGIN:VEVENT
+SUMMARY:Nandya ❤️ Ranjith Reception
+DTSTART:20260628T063000Z
+DTEND:20260628T103000Z
+LOCATION:SS International Convention Hall, Sunticoppa, Kodagu, Karnataka
+DESCRIPTION:Reception Celebration of Ranjith and Nandya
+STATUS:CONFIRMED
+SEQUENCE:0
+END:VEVENT
+
+END:VCALENDAR
