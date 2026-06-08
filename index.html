@@ -906,12 +906,11 @@ setTimeout(() => {
   alert("Wish sent successfully 🤍");
 }; 
 /* COUPLE ID */  
-const eventId = "Bride-Invitation";  
+const eventId = "Bride-Invitation"; 
   
 /* SHOW WISHES */  
 const q = query(
   collection(db, "wishes"),
-  where("eventId", "==", eventId),
   orderBy("time", "desc"),
   limit(21)
 ); 
